@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://logosandtypes.com/wp-content/uploads/2021/01/Swiggy.png">
+    <title>Swiggy</title>
+</head>
+
+<style>
+    #home .home_food{
+        padding-top: 60px;
+    }
+    #about .about{
+        padding-top: 70px;
+    }
+    #variety .our_variety{
+        padding-top: 70px;
+    }
+    #variety .img-fluid {
+        height: 30vh;
+        width: 40vh;
+    }
+    #gallery .our_gallery{
+        padding-top: 70px;
+    }
+
+    #gallery .img-thumbnail {
+        height: 20vh;
+        width: 30vh;
+    }
+    nav button{
+        width: 15vh;
+    }
+    #contact .contact_us{
+           padding-top: 100px;
+    }
+
+</style>
+
+
+
+<body style="background-color: black;">
+
+    <header class="fixed-top">
+        <div class="top_bar">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <nav class="navbar navbar-expand-lg bg-dark">
+                        <img class="navbar-brand mx-2"
+                            src="https://logosandtypes.com/wp-content/uploads/2021/01/Swiggy.png" height="50" width="50"
+                            alt="logo">
+                        <button class=" text-white navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-menu-button" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0h8A1.5 1.5 0 0 1 11 1.5v2A1.5 1.5 0 0 1 9.5 5h-8A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-8z" />
+                                <path
+                                    d="m7.823 2.823-.396-.396A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navigate">
+                            <ul class="navbar-nav ms-auto">
+                                <a class="nav-link text-white" href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a class="nav-link text-white" href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a class="nav-link text-white" href=""><i class="fa-brands fa-instagram"></i></a>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg bg-light">
+
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-menu-button" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0h8A1.5 1.5 0 0 1 11 1.5v2A1.5 1.5 0 0 1 9.5 5h-8A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-8z" />
+                                <path
+                                    d="m7.823 2.823-.396-.396A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navigation">
+                            <ul class="navbar-nav">
+                                <li><a class="nav-link" href="#home">Home</a></li>
+                                <li><a class="nav-link" href="#about">About</a></li>
+                                <li><a class="nav-link" href="#variety">Variety</a></li>
+                                <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                                <li><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <button type="button" class="btn btn-danger mt-2 mx-2">Log In</button>
+                                <button type="button" class="btn btn-success mt-2 mx-2">Sign Up</button>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="border">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-6 col-12">
+                        <div class="home_food">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/205/168/868/dinner-food-pie-pizza-wallpaper-preview.jpg"
+                                width="100%" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="border">
+            <div class="container-fluid border">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="about mt-5">
+                            <h1 class="text-white text-center">ABOUT</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-5">
+                        <div class="about_us mt-5">
+                            <h1 class="text-center text-white mt-5">About Us</h1>
+                            <p class="mt-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+                                magnam tempora vitae
+                                debitis,
+                                eos provident placeat omnis ipsum quod obcaecati corporis? Nesciunt facere rem vero
+                                sapiente, reiciendis asperiores aliquam ex.</p>
+                            <button class="btn btn-danger mb-2">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <img src="https://media.istockphoto.com/photos/herb-omelette-with-chives-and-oregano-picture-id485040276?k=20&m=485040276&s=612x612&w=0&h=JE3ZQT7bNJQJExUEd_cDd_Fs3XAGh8FOio-31Pc3xpA="
+                            alt="image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="variety" class="border">
+            <div class="container-fluid border">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="our_variety mt-5">
+                            <h1 class="text-white text-center">VARIETY</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="breakfast mt-2">
+                            <img src="https://media.istockphoto.com/photos/idly-sambar-or-idli-with-sambhar-and-green-red-chutney-popular-south-picture-id1024549286?k=20&m=1024549286&s=612x612&w=0&h=44nLYMnP99IdDWUL2wr0yTuGcfSyZpp3BHp7EdfWxCA="
+                                class="img-fluid" alt="image">
+                            <h3 class="text-white text-center">BREAKFAST</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="lunch mt-2">
+                            <img src="https://media.istockphoto.com/photos/veg-biryani-picture-id1363306527?k=20&m=1363306527&s=612x612&w=0&h=uHIEHzeGFV-XoCjSB898kMy_rW2vzMqYSW6rza229oQ="
+                                class="img-fluid" alt="image">
+                            <h3 class="text-white text-center">LUNCH</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="snacks mt-2">
+                            <img src="https://c.ndtvimg.com/2022-03/sdt8aji_samosa_625x300_09_March_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350"
+                                class="img-fluid" alt="image">
+                            <h3 class="text-white text-center">SNACKS</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="dinner mt-2">
+                            <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/10/dosa-1633519922.jpg"
+                                class="img-fluid" alt="image">
+                            <h3 class="text-white text-center">DINNER</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="border">
+            <div class="container-fluid border">
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="our_gallery mt-5">
+                            <h1 class="text-white text-center">GALLERY</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2">
+                        <img src="https://imagevars.gulfnews.com/2022/04/04/classic-masala-dosa-recipe_17ff4cfe004_medium.jpg"
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2">
+                        <img src="https://media.istockphoto.com/photos/idli-with-coconut-chutney-and-sambhar-picture-id638506124?k=20&m=638506124&s=612x612&w=0&h=ATkg90j1QhOW2gEztmU8i0jqnGIpQyPXxfgRzOBXdXg="
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2">
+                        <img src="https://media.istockphoto.com/photos/fresh-homemade-vegetarian-pizza-picture-id692325810?k=20&m=692325810&s=612x612&w=0&h=qEFccni9r-jerPMtMfGglOU9rep8v8X3QwYJnTtVh0s="
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2">
+                        <img src="https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022__480.jpg"
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-2">
+                        <img src="https://media.istockphoto.com/photos/keema-or-kheema-biryani-fragrant-and-spicy-minced-lamb-or-goat-or-picture-id1086974196?k=20&m=1086974196&s=612x612&w=0&h=boffZeKzh_AaSKPQ2QrZlWcONAHtqlFVe8o1Zxm0SMs="
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-2">
+                        <img src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2016/02/Veg-Fried-Rice-1.jpg?resize=720%2C481&ssl=1"
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-2">
+                        <img src="https://st.depositphotos.com/1692343/5094/i/450/depositphotos_50945415-stock-photo-healthy-homemade-fried-rice.jpg"
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-2">
+                        <img src="https://odishabytes.com/wp-content/uploads/2020/04/Lentil-Rice-nk7ni4vepnykm5zoeu6pkcucm37phs246on3vmxdxc.jpg"
+                            class="img-thumbnail">
+                        <a class="btn btn-primary">Click To Order</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="border">
+        <div class="container-fluid border bg-dark">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="contact_us">
+                        <h1 class="text-white text-center">CONTACT</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <form>
+                        <input type="text" placeholder="Enter name" class=" text-center form-control w-75 mx-3 mt-5">
+                        <input type="email" placeholder="Enter email" class="form-control text-center w-75 mx-3 mt-5">
+                        <input type="number" placeholder="Enter mobile number"
+                            class="form-control text-center mx-3 w-75 mt-5">
+                        <button class="btn btn-danger mx-3 mt-5 mb-2">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img src="https://cdn.bolnews.com/wp-content/uploads/2021/08/chicken-biryani-recipe-main-photo.jpg"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
